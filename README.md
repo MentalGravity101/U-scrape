@@ -28,3 +28,7 @@ Automation with Scheduling:
 
 Logging and Feedback:
   Built-in log system for real-time feedback on scraping and errors.
+
+
+
+You will need a Youtube API key to run this application. They're not hard at all to get, it took me about 5 minutes total. 
