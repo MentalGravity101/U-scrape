@@ -7,23 +7,23 @@ reproducing, modifying, or distributing the Software, you agree to the terms of 
 Subject to the terms of this License, the author (the "Author") grants to any individual or legal entity (the "Licensee") a worldwide, royalty-free, non-exclusive license to
 use, copy, modify, merge, publish, distribute, and sublicense the Software, subject to the following conditions:
 
-3. Preservation of Information Headers
+2. Preservation of Information Headers
 Any information headers located at the top of the source code files, including but not limited to author attribution, copyright notices, disclaimers, or licensing information,
 must remain intact in all copies or substantial portions of the Software. This requirement applies to both original and modified versions of the Software.
 
-4. No Warranty
+3. No Warranty
 THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
 TITLE, OR NON-INFRINGEMENT. THE AUTHOR DISCLAIMS ALL LIABILITY ARISING OUT OF THE USE OR PERFORMANCE OF THE SOFTWARE.
 
-5. Limitation of Liability
+4. Limitation of Liability
 IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH
 THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-6. Indemnification
+5. Indemnification
 You agree to indemnify and hold harmless the Author from any claims, liabilities, damages, or expenses (including attorneys' fees) arising out of your use, reproduction, modification,
 or distribution of the Software.
 
-7. Permitted Uses
+6. Permitted Uses
 You may:
   - Use the Software for personal, educational, commercial, or non-commercial purposes.
   - Modify the Software to suit your needs, provided that any modifications retain the original information headers as specified in Section 2.
