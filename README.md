@@ -1,5 +1,5 @@
 
-![Screenshot 2024-11-20 223850](https://github.com/user-attachments/assets/f8a4f4e9-0b84-43f6-85f6-857c469c669f)
+![Screenshot 2024-11-20 224503](https://github.com/user-attachments/assets/2464ab9e-02a6-4559-90e4-8ae201c950a3)
 
 
 Key Features
