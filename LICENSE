@@ -1,32 +1,37 @@
 Open Source Software License
 
-This Open Source Software License ("License") governs the use, reproduction, modification, and distribution of the software (the "Software") provided under this License. By using,
-reproducing, modifying, or distributing the Software, you agree to the terms of this License.
+This Open Source Software License ("License") governs the use, reproduction, modification, and distribution of the software
+(the "Software") provided under this License. By using, reproducing, modifying, or distributing the Software, you agree to
+the terms of this License.
 
 1. License Grant
-Subject to the terms of this License, the author (the "Author") grants to any individual or legal entity (the "Licensee") a worldwide, royalty-free, non-exclusive license to
-use, copy, modify, merge, publish, distribute, and sublicense the Software, subject to the following conditions:
+Subject to the terms of this License, the author (the "Author") grants to any individual or legal entity (the "Licensee") a
+worldwide, royalty-free, non-exclusive license to use, copy, modify, merge, publish, distribute, and sublicense the Software,
+subject to the following conditions:
 
 2. Preservation of Information Headers
-Any information headers located at the top of the source code files, including but not limited to author attribution, copyright notices, disclaimers, or licensing information,
-must remain intact in all copies or substantial portions of the Software. This requirement applies to both original and modified versions of the Software.
+Any information headers located at the top of the source code files, including but not limited to author attribution, copyright
+notices, disclaimers, or licensing information, must remain intact in all copies or substantial portions of the Software. This
+requirement applies to both original and modified versions of the Software.
 
 3. No Warranty
-THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-TITLE, OR NON-INFRINGEMENT. THE AUTHOR DISCLAIMS ALL LIABILITY ARISING OUT OF THE USE OR PERFORMANCE OF THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGEMENT. THE AUTHOR DISCLAIMS ALL LIABILITY ARISING OUT
+OF THE USE OR PERFORMANCE OF THE SOFTWARE.
 
 4. Limitation of Liability
-IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH
-THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 5. Indemnification
-You agree to indemnify and hold harmless the Author from any claims, liabilities, damages, or expenses (including attorneys' fees) arising out of your use, reproduction, modification,
-or distribution of the Software.
+You agree to indemnify and hold harmless the Author from any claims, liabilities, damages, or expenses (including attorneys' fees)
+arising out of your use, reproduction, modification, or distribution of the Software.
 
 6. Permitted Uses
 You may:
   - Use the Software for personal, educational, commercial, or non-commercial purposes.
-  - Modify the Software to suit your needs, provided that any modifications retain the original information headers as specified in Section 2.
+  - Modify the Software to suit your needs, provided that any modifications retain the original information headers as specified
+    in Section 2.
   - Distribute the Software, or any modifications thereof, to others provided the information headers remain intact.
 
 7. Prohibited Uses
@@ -35,13 +40,15 @@ You may not use the Software:
  - For unlawful purposes or in violation of any applicable laws or regulations.
 
 8. Termination
-This License is perpetual unless terminated. The License will terminate automatically if you fail to comply with its terms. Upon termination, you must cease all use, reproduction, and
-distribution of the Software.
+This License is perpetual unless terminated. The License will terminate automatically if you fail to comply with its terms. Upon
+termination, you must cease all use, reproduction, and distribution of the Software.
 
 9. Miscellaneous
-This License represents the entire agreement between the Author and Licensee regarding the Software and supersedes any prior agreements or understandings. If any provision of this License
-is found to be unenforceable, the remaining provisions shall remain in full force and effect. By using, modifying, or distributing the Software, you acknowledge that you have read this License,
-understand its terms, and agree to be bound by them.
+This License represents the entire agreement between the Author and Licensee regarding the Software and supersedes any prior agreements
+or understandings. If any provision of this License is found to be unenforceable, the remaining provisions shall remain in full force
+and effect. By using, modifying, or distributing the Software, you acknowledge that you have read this License, understand its terms,
+and agree to be bound by them.
 
 Author: [Dustan Gunn - MentalGravity101]
 Date: [11/20/2024]
+
