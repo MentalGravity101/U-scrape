@@ -97,6 +97,19 @@ class YouTubeScraperApp:
         country_menu.grid(row=1, column=1, sticky="ew", padx=5, pady=5)
         country_menu.set("United States")
 
+        ttk.Label(frame, text="Duplicate Handling:").grid(row=2, column=1, sticky="e", padx=5, pady=5)
+        self.duplicate_handling = tk.StringVar(value="skip")  # Default to 'skip'
+
+        radio_skip = ttk.Radiobutton(frame, text="Skip", variable=self.duplicate_handling, value="skip")
+        radio_skip.grid(row=2, column=2, sticky="e")
+
+        radio_overwrite = ttk.Radiobutton(frame, text="Overwrite", variable=self.duplicate_handling, value="overwrite")
+        radio_overwrite.grid(row=2, column=3, sticky="e")
+
+        radio_ignore = ttk.Radiobutton(frame, text="Ignore                         ", variable=self.duplicate_handling, value="ignore")
+        radio_ignore.grid(row=2, column=4, sticky="e")
+
+        
         ttk.Label(frame, text="Max Results per Scrape (1-50):").grid(row=2, column=0, sticky="w", padx=5, pady=5)
         ttk.Spinbox(frame, from_=1, to=50, textvariable=self.max_results, width=10).grid(row=2, column=1, sticky="w", padx=5, pady=5)
 
@@ -317,20 +330,56 @@ class YouTubeScraperApp:
         plt.tight_layout()
         plt.show()
 
+    
     def save_data_to_db(self, data):
-        try:
-            conn = sqlite3.connect(self.db_path)
-            cursor = conn.cursor()
-            for video in data:
+    try:
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        for video in data:
+            # Check for duplicates
+            cursor.execute("SELECT * FROM videos WHERE video_id = ?", (video["video_id"],))
+            existing_record = cursor.fetchone()
+
+            if existing_record:
+                if self.duplicate_handling.get() == "skip":
+                    # Skip duplicate record
+                    self.log(f"Skipped duplicate record for Video ID {video['video_id']}.")
+                    continue
+                elif self.duplicate_handling.get() == "overwrite":
+                    # Overwrite existing record
+                    cursor.execute("""
+                        UPDATE videos
+                        SET title = :title, 
+                            published_at = :published_at, 
+                            channel_title = :channel_title,
+                            view_count = :view_count,
+                            like_count = :like_count,
+                            comment_count = :comment_count,
+                            country = :country
+                        WHERE video_id = :video_id
+                    """, video)
+                    self.log(f"Overwrote duplicate record for Video ID {video['video_id']}.")
+                elif self.duplicate_handling.get() == "ignore":
+                    # Ignore duplicate check and insert as a new record
+                    cursor.execute("""
+                        INSERT INTO videos (video_id, title, published_at, channel_title, view_count, like_count, comment_count, country)
+                        VALUES (:video_id, :title, :published_at, :channel_title, :view_count, :like_count, :comment_count, :country)
+                    """, video)
+                    self.log(f"Ignored duplicate and added new record for Video ID {video['video_id']}.")
+            else:
+                # Insert new record if no duplicate is found
                 cursor.execute("""
                     INSERT INTO videos (video_id, title, published_at, channel_title, view_count, like_count, comment_count, country)
                     VALUES (:video_id, :title, :published_at, :channel_title, :view_count, :like_count, :comment_count, :country)
                 """, video)
-            conn.commit()
-            conn.close()
-            self.log("Data saved to the database.")
-        except sqlite3.Error as e:
-            raise Exception(f"Database Error: {e}")
+
+        conn.commit()
+        conn.close()
+        self.log("Data saved to the database.")
+    except sqlite3.Error as e:
+        raise Exception(f"Database Error: {e}")
+
 
     def export_to_csv(self):
         conn = sqlite3.connect(self.db_path)
