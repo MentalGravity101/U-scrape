@@ -330,7 +330,6 @@ class YouTubeScraperApp:
         plt.tight_layout()
         plt.show()
 
-    
     def save_data_to_db(self, data):
     try:
         conn = sqlite3.connect(self.db_path)
